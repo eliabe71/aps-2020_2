@@ -1,0 +1,6 @@
+@startuml
+
+:Usuario: --> (Usa a aplicacao)
+skinparam actorStyle awesome 
+:Admin: --> (Administra a aplicacao)
+@enduml

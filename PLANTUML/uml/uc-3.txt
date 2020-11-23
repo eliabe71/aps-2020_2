@@ -1,0 +1,25 @@
+@startuml
+left to right direction
+
+/'Atores'/
+actor Gourmet as g
+package Profissional {
+  actor Chefe as c
+  actor "Cr<U+00ED>tico" as fc
+}
+
+/'Casos de uso'/
+package Restaurante {
+  usecase "Comer Comida" as UC1
+  usecase "Pagar por Comida" as UC2
+  usecase "Beber" as UC3
+  usecase "Provar" as UC4
+  usecase "Preparar Comida" as UC5
+}
+
+fc --> UC4
+g --> UC1
+g --> UC2
+g --> UC3
+c --> UC5
+@enduml
